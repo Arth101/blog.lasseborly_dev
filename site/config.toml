@@ -1,0 +1,4 @@
+theme = "bastard"
+baseurl = "https://blog.lasseborly.dk"
+languageCode = "en-us"
+title = "Blog Borly"
