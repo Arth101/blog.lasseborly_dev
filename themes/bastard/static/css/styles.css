@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster|Quicksand|Courgette';
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media(max-width: 600px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #336699;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #C0C0C0;
+}
+
+p {
+  line-height: 1.4;
+  text-align: justify;
+}
+
+h1#site-title {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  margin: 40px 0;
+}
+
+section.summary {
+  margin: 0 0 60px 0;
+}
+
+section h2  {
+  font-size: 1.3em;
+  font-family: 'Lobster', cursive;
+}
+
+section time {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+section article {
+  margin: 15px 0 0 0;
+}
+
+section#paginator #next {
+  float: right;
+}
+
+section#paginator #previous {
+  
+}

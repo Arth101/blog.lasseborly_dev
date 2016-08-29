@@ -3,37 +3,13 @@
 {{ $baseurl := .Site.BaseURL }}
 
 <section>
-  <div>
-        <article>
-           {{ .Content }}
-        </article>
-  </div>
+  <h2>{{ .Title }}</h2>
+  <time>{{ .Date.Format "2. January, 2006"}}</time>
 </section>
-
-<aside id="meta">
-  <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-    </section>
-    <ul id="categories">
-      {{ range .Params.topics }}
-        <li><a href="{{ $baseurl }}/topics/{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    <ul id="tags">
-      {{ range .Params.tags }}
-        <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    </div>
-    <div>
-        {{ if .Prev }}
-          <a href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
-        {{ end }}
-        {{ if .Next }}
-          <a href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-        {{ end }}
-    </div>
-</aside>
+<section>
+  <article>
+    {{ .Content }}
+  </article>
+</section>
 
 {{ partial "footer.html" . }}
